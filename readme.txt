@@ -31,11 +31,13 @@ Usage
 *)  Instantiate a matrix object directly, optionally specifying a fill value:
 
     ::: python
+
         m = Matrix(rows, cols, fill=0)
 
 *)  Instantiate a matrix object from a list of lists:
 
     ::: python
+
         m = Matrix.FromList([
             [1, 2, 3],
             [4, 5, 6]
@@ -57,11 +59,13 @@ Usage
 *)  Instantiate an n x n identity matrix:
 
     ::: python
+
         m = Matrix.Identity(n)
 
 *)  The shortcut `matrix()` function supports the syntax of all three static methods:
 
     ::: python
+    
         m = matrix('1 2 3')
         m = matrix([[1, 2, 3]])
         m = matrix(3)
