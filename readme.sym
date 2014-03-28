@@ -145,7 +145,7 @@ Matrix objects support the following methods:
 
 *)  `inverse()`
 
-    Returns the inverse matrix if it exists; otherwise raises MatrixError.
+    Returns the inverse matrix if it exists, otherwise raises MatrixError.
 
 *)  `is_invertible()`
 
@@ -218,7 +218,7 @@ The `pymatrix` module exports the following functions:
 
 *)  `cross(u, v)`
 
-    Returns `u x v` - the vector/cross product of the 3D vectors `u` and `v`.
+    Returns `u x v` - the vector/cross product of the 3D column vectors `u` and `v`.
 
 
 === Exceptions ===
