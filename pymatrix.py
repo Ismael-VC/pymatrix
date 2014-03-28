@@ -8,7 +8,7 @@ element in a matrix is m[0][0] rather than m[1][1].
 
 Caution: Beware of rounding errors with floats. The algorithm used to
 calculate the row echelon form (and hence the inverse, etc.) is sensitive
-to small rounding errors around zero; i.e. if a matrix contains entries 
+to small rounding errors near zero; i.e. if a matrix contains entries 
 which should be zero but aren't due to rounding errors then these errors
 can be magnified by the algorithm.
 
