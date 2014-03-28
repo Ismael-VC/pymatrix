@@ -21,7 +21,7 @@ License: This work has been placed in the public domain.
 
 """
 
-__version__ = '0.5.0'
+__version__ = '1.0.0'
 __all__ = ['cross', 'dot', 'matrix', 'Matrix', 'MatrixError']
 
 

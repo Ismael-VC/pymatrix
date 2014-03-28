@@ -8,7 +8,7 @@ from distutils.core import setup
 
 short_description = (
     'A lightweight matrix object with support for '
-    'basic linear algebra operations'
+    'basic linear algebra operations.'
 )
 
 long_description = """\
@@ -18,7 +18,7 @@ for further details.
 
 setup(
     name = 'pymatrix',
-    version = '0.5.0',
+    version = '1.0.0',
     url = 'https://github.com/xpxqx/pymatrix',
     license = 'Public Domain',
     author = 'xpxqx',
