@@ -18,7 +18,7 @@ for further details.
 
 setup(
     name = 'pymatrix',
-    version = '1.0.0',
+    version = '1.0.1',
     url = 'https://github.com/xpxqx/pymatrix',
     license = 'Public Domain',
     author = 'xpxqx',
