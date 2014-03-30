@@ -78,13 +78,15 @@ Matrix objects are iterable. Alternatively, the `elements()` method returns an i
 ::: python
 
     for element in matrix:
-       ...
+        ...
 
     for row, col, element in matrix.elements():
         ...
 
 
 === Indexing ===
+
+::: python
 
     matrix[row][col] = element
 
