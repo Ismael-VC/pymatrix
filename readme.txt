@@ -232,6 +232,18 @@ The `pymatrix` module exports the following functions:
 An invalid operation on a matrix object will raise a `MatrixError` exception.
 
 
+Installation
+------------
+
+Install directly from the Python Package Index using `pip`:
+
+    $ pip install pymatrix
+
+Alternatively, download the source and run:
+
+    $ python setup.py install
+
+
 Requirements
 ------------
 
