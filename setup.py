@@ -16,7 +16,7 @@ def load_meta(*path):
     filepath = os.path.join(os.path.dirname(__file__), *path)
     with io.open(filepath, encoding='utf-8') as mfile:
         pystr = mfile.read()
-        regex = r'''^__([a-z]+)__ = "(.*)"'''
+        regex = r'''^__([a-z]+)__ = ["'](.*)["']'''
         return dict(re.findall(regex, pystr, flags=re.MULTILINE))
 
 
