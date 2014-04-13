@@ -8,7 +8,7 @@ Sample syntax:
 
 ::: python
 
-    from pymatrix import *
+    from pymatrix import matrix
 
     m = matrix([
         [1, 2],
@@ -28,13 +28,13 @@ Usage
 
 === Instantiation ===
 
-*)  Instantiate a matrix object directly, optionally specifying a fill value:
+*   Instantiate a matrix object directly, optionally specifying a fill value:
 
     ::: python
 
         m = Matrix(rows, cols, fill=0)
 
-*)  Instantiate a matrix object from a list of lists:
+*   Instantiate a matrix object from a list of lists:
 
     ::: python
 
@@ -43,26 +43,26 @@ Usage
             [4, 5, 6]
         ])
 
-*)  Instantiate a matrix object from a string:
+*   Instantiate a matrix object from a string:
 
     ::: python
 
-        s = '''
+        s = """
         1 2 3/7
         4/7 5 6
-        '''
+        """
 
         m = Matrix.FromString(s, rowsep=None, colsep=None, parser=fractions.Fraction)
 
     Row separators default to newlines, column separators to spaces. Elements are parsed as fractions (rational numbers) by default.
 
-*)  Instantiate an n x n identity matrix:
+*   Instantiate an n x n identity matrix:
 
     ::: python
 
         m = Matrix.Identity(n)
 
-*)  The shortcut `matrix()` function supports the syntax of all three static methods:
+*   The shortcut `matrix()` function supports the syntax of all three static methods:
 
     ::: python
     
@@ -97,119 +97,119 @@ Note that indices are zero-based in accordance with programming convention rathe
 
 Matrix objects support the following methods:
 
-*)  `adjoint()`
+*   `adjoint()`
 
     Returns the adjoint matrix as a new object.
 
-*)  `cofactor(row, col)`
+*   `cofactor(row, col)`
 
     Returns the specified cofactor.
 
-*)  `cofactors()`
+*   `cofactors()`
 
     Returns the matrix of cofactors as a new object.
 
-*)  `col(n)`
+*   `col(n)`
 
     Returns an iterator over the specified column.
 
-*)  `cols()`
+*   `cols()`
 
     Returns a column iterator for each column in the matrix.
 
-*)  `colvec(n)`
+*   `colvec(n)`
 
     Returns the specified column as a new column vector.
 
-*)  `copy()`
+*   `copy()`
 
     Returns a copy of the matrix.
 
-*)  `del_col(col)`
+*   `del_col(col)`
 
     Returns a new matrix with the specified column deleted.
 
-*)  `del_row(row)`
+*   `del_row(row)`
 
     Returns a new matrix with the specified row deleted.
 
-*)  `det()`
+*   `det()`
 
     Returns the determinant of the matrix.
 
-*)  `dir()`
+*   `dir()`
 
     Vectors only. Returns the unit vector in the direction of the vector.
 
-*)  `elements()`
+*   `elements()`
 
     Iterator returning the tuple `(row, col, element)`.
 
-*)  `equals(other, delta)`
+*   `equals(other, delta)`
 
     True if corresponding elements agree to within `delta`.
 
-*)  `inverse()`
+*   `inverse()`
 
     Returns the inverse matrix if it exists, otherwise raises MatrixError.
 
-*)  `is_invertible()`
+*   `is_invertible()`
 
     True if the matrix is invertible.
 
-*)  `is_square()`
+*   `is_square()`
 
     True if the matrix is square.
 
-*)  `len()`
+*   `len()`
 
     Vectors only. Returns the length of the vector.
 
-*)  `map(func)`
+*   `map(func)`
 
     Returns a new matrix formed by mapping `func` to each element.
 
-*)  `minor(row, col)`
+*   `minor(row, col)`
 
     Returns the specified minor.
 
-*)  `rank()`
+*   `rank()`
 
     Returns the rank of the matrix.
 
-*)  `ref()`
+*   `ref()`
 
     Returns the row echelon form of the matrix.
 
-*)  `row(n)`
+*   `row(n)`
 
     Returns an iterator over the specified row.
 
-*)  `rowop_add(r1, m, r2)`
+*   `rowop_add(r1, m, r2)`
 
     In-place row operation. Adds `m` times row `r2` to row `r1`.
 
-*)  `rowop_multiply(row, m)`
+*   `rowop_multiply(row, m)`
 
     In-place row operation. Multiplies the specified row by the scalar `m`.
 
-*)  `rowop_swap(r1, r2)`
+*   `rowop_swap(r1, r2)`
 
     In-place row operation. Interchanges the two specified rows.
 
-*)  `rows()`
+*   `rows()`
 
     Returns a row iterator for each row in the matrix.
 
-*)  `rowvec(n)`
+*   `rowvec(n)`
 
     Returns the specified row as a new row vector.
 
-*)  `rref()`
+*   `rref()`
 
     Returns the reduced row echelon form of the matrix.
 
-*)  `transpose()`
+*   `transpose()`
 
     Returns the transpose of the matrix as a new object.
 
@@ -218,11 +218,11 @@ Matrix objects support the following methods:
 
 The `pymatrix` module exports the following functions:
 
-*)  `dot(u, v)`
+*   `dot(u, v)`
 
     Returns `u . v` - the inner/scalar/dot product of the vectors `u` and `v`.
 
-*)  `cross(u, v)`
+*   `cross(u, v)`
 
     Returns `u x v` - the vector/cross product of the 3D column vectors `u` and `v`.
 

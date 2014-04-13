@@ -4,17 +4,17 @@ A pure-Python matrix module with support for basic linear algebra operations.
 
 Sample syntax:
 
-    from pymatrix import *
-
+    from pymatrix import matrix
+    
     m = matrix([
         [1, 2],
         [3, 4]
     ])
-
+    
     a = m + m * 2
     b = m * m
     c = m ** 3
-
+    
     d = m.det()
     e = m.inverse()
 
@@ -35,11 +35,11 @@ Sample syntax:
 
  *  Instantiate a matrix object from a string:
 
-        s = '''
+        s = """
         1 2 3/7
         4/7 5 6
-        '''
-
+        """
+        
         m = Matrix.FromString(s, rowsep=None, colsep=None, parser=fractions.Fraction)
 
     Row separators default to newlines, column separators to spaces. Elements are parsed as fractions (rational numbers) by default.
@@ -60,7 +60,7 @@ Matrix objects are iterable. Alternatively, the `elements()` method returns an i
 
     for element in matrix:
         ...
-
+    
     for row, col, element in matrix.elements():
         ...
 
