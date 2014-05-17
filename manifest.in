@@ -1,1 +1,1 @@
-include readme.html license.txt test_pymatrix.py
+include license test_pymatrix.py

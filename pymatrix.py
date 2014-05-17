@@ -17,11 +17,11 @@ An example of the kind of rounding error that can cause problems is:
     >>> 0.1 * 3 - 0.3
     5.551115123125783e-17
     
-License: This work has been placed in the public domain.
+License: Public Domain.
 
 """
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __all__ = ['cross', 'dot', 'matrix', 'Matrix', 'MatrixError']
 
 
