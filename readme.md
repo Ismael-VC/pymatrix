@@ -39,13 +39,13 @@ Requirements
 Tested with Python 2.7 and 3.2.
 
 
-Disclaimer
-----------
-
-I built this module for my own edutainment while taking an undergrad course in linear algebra. It's easy to use and ideal for verifying pen-and-paper calculations, but if you have serious number crunching to do, the math professors over at [numpy](http://www.numpy.org/) have a better solution for you.
-
-
 License
 -------
 
 This work has been placed in the public domain.
+
+
+Disclaimer
+----------
+
+I built this module for my own edutainment while taking an undergrad course in linear algebra. It's easy to use and ideal for verifying pen-and-paper calculations using rational numbers, but if you have heavy duty number crunching to do, the math professors over at [numpy](http://www.numpy.org/) have a better solution for you.
