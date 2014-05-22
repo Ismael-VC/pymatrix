@@ -20,6 +20,8 @@ Sample syntax:
     d = m.det()
     e = m.inverse()
 
+Disclaimer: I built this module for my own edutainment while taking an undergrad course in linear algebra. If you have serious number crunching to do, the math professors over at [numpy](http://www.numpy.org/) have a better solution for you.
+
 
 Installation
 ------------
