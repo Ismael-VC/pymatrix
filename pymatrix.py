@@ -21,7 +21,7 @@ License: Public Domain.
 
 """
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 __all__ = ['cross', 'dot', 'matrix', 'Matrix', 'MatrixError']
 
 
@@ -58,8 +58,8 @@ def cross(u, v):
 
 
 class MatrixError(Exception):
-	""" Invalid operation attempted on a Matrix object. """
-	pass
+    """ Invalid operation attempted on a Matrix object. """
+    pass
 
 
 class Matrix:
